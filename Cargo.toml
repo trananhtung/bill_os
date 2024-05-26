@@ -1,0 +1,19 @@
+[package]
+name = "bill_os"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Add core or any other no_std compatible dependencies
+
+[dev-dependencies]
+# Ensure test-related dependencies are commented out or removed
+
+[features]
+default = ["core"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
